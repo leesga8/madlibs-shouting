@@ -8,23 +8,28 @@
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
   <script src="js/jquery-3.6.0.js"></script>
- 
+  <script src="js/scripts.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Festive&display=swap" rel="stylesheet">
+
   <title>Roommate Letter</title>
 </head>
 <body>
   <div class="container">
   
     <!--FORM FOR BLANK WORDS-->
-
-    <h1>Roommate Letter</h1>
-    <form id="#">
+    <div class="container" id="blah"> 
+    
+    <form id="formOne">
+      <h1>Roommate Letter</h1>
       <div class="form-group">
         <label for="user1">Your roommate</label>
         <input id="user1" class="form-control" type="text">
       </div>
 
       <div class="form-group">
-        <label for="verb1">A verb</label>
+        <label for="verb1">An "ing" verb</label>
         <input id="verb1" class="form-control" type="text">
       </div>      
 
@@ -48,7 +53,6 @@
         <input id="noun2" class="form-control" type="text">
       </div>
 
-
       <div class="form-group">
         <label for="number">A number</label>
         <input id="number" class="form-control" type="number">
@@ -63,27 +67,26 @@
         <label for="user2">Your name</label>
         <input id="user2" class="form-control" type="text">
       </div>
-    </form>
-        
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>  
+
+    <!-- MAD LIB LETTER TO ROOMMATE -->
+
+    <div id="letter">
+      <h1>Dear Roommate, Please.</h1>
+      <p>
+          Dear <span class="user1"></span>,
+          <br>
+          I am <span class="verb1"></span> to you today in regards to the house chores. Please  <span class="verb2"></span> your food after consuming and keep the kitchen <span class="adjective"></span>. Especially, after you have 
+          cooked <span class="noun1"></span>, it makes the whole house smell like <span class="noun2"></span>. Your account balance is negative $<span class="number"></span>. Please leave your share of the rent money in my <span class="location"></span>.
+          <br>
+          Sincerely,
+          <br>
+          <span class="user2"></span>
+      </p>
+
+    </div>
   </div>
-
-  <!-- MAD LIB LETTER TO ROOMMATE -->
-
-  <div id="letter">
-    <h1>Dear Roommate, Please.</h1>
-    <p>
-        Dear <span class="user1"></span>,
-
-        I am <span class="verb1"></span> to you today in regards to the house chores. Please  <span class="verb2"></span> your food after consuming and keep the kitchen <span class="adjective"></span>. Especially, after you have 
-        cooked <span class="noun1"></span>, it makes the whole house smell like <span class="noun2"></span>. Your account balance is negative <span class="number"></span>. Please leave your money in my <span class="location"></span>.
-
-        Sincerely,
-        Your <span class="user2"></span>
-    </p>
-
-  </div>
-
-
-
 </body>
 </html>

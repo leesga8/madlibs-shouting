@@ -1,0 +1,25 @@
+#letter {
+  display: none;
+  border: 1px solid lightgrey;
+  filter: drop-shadow(20px 20px 4px rgb(209, 209, 157));
+  background-color: ivory;
+  font-family: 'Cedarville Cursive', cursive;
+  padding: 20px;
+}
+
+#letter p {
+  font-size: 130%;
+}
+
+.container {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+body {
+  background-color: beige;
+}
+
+h1 {
+  font-family: 'Cedarville Cursive', cursive;
+}
